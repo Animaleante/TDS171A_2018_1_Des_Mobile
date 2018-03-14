@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="empty">Vazio</string>
     <array name="grupos">
         <item>Grupo A</item>
         <item>Grupo B</item>
@@ -9,6 +10,16 @@
         <item>Grupo F</item>
         <item>Grupo G</item>
         <item>Grupo H</item>
+    </array>
+    <array name="gruposValues">
+        <item>grupoA</item>
+        <item>grupoB</item>
+        <item>grupoC</item>
+        <item>grupoD</item>
+        <item>grupoE</item>
+        <item>grupoF</item>
+        <item>grupoG</item>
+        <item>grupoH</item>
     </array>
     <array name="grupoA">
         <item>Egito</item>

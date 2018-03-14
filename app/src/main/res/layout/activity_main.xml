@@ -8,9 +8,63 @@
     tools:context="com.example.opet.myapplication.MainActivity">
 
     <Spinner
+        android:id="@+id/grupoSeletor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/grupos">
+        android:entries="@array/grupos"
+        android:textAlignment="center"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp">
     </Spinner>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10sp"/>
+    <TextView
+        android:id="@+id/grupoItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10sp"/>
+
+    <TextView
+        android:id="@+id/grupoItem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10sp"/>
+
+    <TextView
+        android:id="@+id/grupoItem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10sp"/>
+    <TextView
+        android:id="@+id/grupoItem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
 
 </LinearLayout>
