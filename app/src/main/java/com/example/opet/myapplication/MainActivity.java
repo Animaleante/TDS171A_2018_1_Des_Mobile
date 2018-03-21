@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
                 String val = getResources().getStringArray(R.array.gruposValues)[selectedIndex];
                 // Log.d("Value", val);
                 int resourceId = getResources().getIdentifier("@array/"+val, "id", getPackageName());
-                Log.d("resourceId", ""+resourceId);
+                // Log.d("resourceId", ""+resourceId);
 
                 grupoItem1.setText(getResources().getStringArray(resourceId)[0]);
                 grupoItem2.setText(getResources().getStringArray(resourceId)[1]);
@@ -46,9 +46,7 @@ public class MainActivity extends Activity {
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
+            public void onNothingSelected(AdapterView<?> adapterView) {}
         });
     }
 }
