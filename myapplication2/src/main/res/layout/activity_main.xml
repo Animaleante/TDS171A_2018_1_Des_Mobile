@@ -12,20 +12,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/app_name"
-        android:textColor="#898989"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="4sp"
-        android:backgroundTint="#cccccc"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/product_name"
         android:textColor="#898989"
         android:textStyle="bold"
