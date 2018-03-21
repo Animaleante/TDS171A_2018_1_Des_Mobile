@@ -7,4 +7,105 @@
     android:orientation="vertical"
     tools:context="com.example.exercicio3.MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/char_name"/>
+    <EditText
+        android:id="@+id/inputCharName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/char_race"/>
+    <EditText
+        android:id="@+id/inputCharRace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/char_class"/>
+    <EditText
+        android:id="@+id/inputCharClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Força:"/>
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inteligencia:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destreza:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"/>
+
 </LinearLayout>
