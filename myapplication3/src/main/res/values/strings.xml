@@ -3,4 +3,24 @@
     <string name="char_name">Nome</string>
     <string name="char_race">Raça</string>
     <string name="char_class">Classe</string>
+
+    <array name="char_races">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Anão</item>
+        <item>Gnomo</item>
+    </array>
+
+    <array name="char_classes">
+        <item>Guerreiro</item>
+        <item>Ranger</item>
+        <item>Mago</item>
+        <item>Ladino</item>
+        <item>Monge</item>
+        <item>Bárbaro</item>
+        <item>Bardo</item>
+        <item>Clérigo</item>
+        <item>Paladino</item>
+        <item>Feiticeiro</item>
+    </array>
 </resources>

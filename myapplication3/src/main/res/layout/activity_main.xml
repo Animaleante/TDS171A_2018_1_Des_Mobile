@@ -20,19 +20,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/char_race"/>
-    <EditText
+    <!--<EditText
         android:id="@+id/inputCharRace"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"/>-->
+    <Spinner
+        android:id="@+id/inputCharRace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/char_races"></Spinner>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/char_class"/>
-    <EditText
+    <!--<EditText
         android:id="@+id/inputCharClass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"/>-->
+    <Spinner
+        android:id="@+id/inputCharClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/char_classes"></Spinner>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,14 +56,17 @@
             android:layout_width="10sp"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/textForca"
             android:layout_width="50sp"
             android:layout_height="wrap_content"
             android:text="0"/>
         <Button
+            android:id="@+id/btnIncreaseForca"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="+"/>
         <Button
+            android:id="@+id/btnDecreaseForca"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="-"/>
@@ -68,14 +81,17 @@
             android:layout_height="wrap_content"
             android:text="Inteligencia:"/>
         <TextView
+            android:id="@+id/textInteligencia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"/>
         <Button
+            android:id="@+id/btnIncreaseInteligencia"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="+"/>
         <Button
+            android:id="@+id/btnDecreaseInteligencia"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="-"/>
@@ -90,22 +106,31 @@
             android:layout_height="wrap_content"
             android:text="Destreza:"/>
         <TextView
+            android:id="@+id/textDestreza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"/>
         <Button
+            android:id="@+id/btnIncreaseDestreza"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="+"/>
         <Button
+            android:id="@+id/btnDecreaseDestreza"
             android:layout_width="40sp"
             android:layout_height="wrap_content"
             android:text="-"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvar"/>
+
+    <TextView
+        android:id="@+id/charSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
