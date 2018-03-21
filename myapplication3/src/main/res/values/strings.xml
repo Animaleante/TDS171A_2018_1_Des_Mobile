@@ -3,6 +3,9 @@
     <string name="char_name">Nome</string>
     <string name="char_race">Raça</string>
     <string name="char_class">Classe</string>
+    <string name="char_forca">Força:</string>
+    <string name="char_inteligencia">Inteligencia:</string>
+    <string name="char_destreza">Destreza:</string>
 
     <array name="char_races">
         <item>Humano</item>
