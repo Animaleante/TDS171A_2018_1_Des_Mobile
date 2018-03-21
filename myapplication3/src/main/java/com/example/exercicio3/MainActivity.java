@@ -2,6 +2,7 @@ package com.example.exercicio3;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -158,19 +159,31 @@ public class MainActivity extends Activity {
                 String charRace = inputCharRace.getSelectedItem().toString();
                 String charClass = inputCharClass.getSelectedItem().toString();
 
-                int hp = forca * 5;
+                int modForca = 0;
+                int modInteligencia = 0;
+                int modDestreza = 0;
+
+                int selectedRaceIndex = inputCharRace.getSelectedItemPosition();
+
+                modForca = getResources().getIntArray(R.array.forca_mod)[selectedRaceIndex];
+                modInteligencia = getResources().getIntArray(R.array.inteligencia_mod)[selectedRaceIndex];
+                modDestreza = getResources().getIntArray(R.array.destreza_mod)[selectedRaceIndex];
+
+                int hp = (forca + modForca) * 5;
 
                 String s = "Ficha do personagem" + "\n";
                 s += "Nome: " + charName + "\n";
                 s += "Raça: " + charRace + "\n";
                 s += "Classe: " + charClass + "\n";
 
-                // TODO modificar forca, inteligencia e destreza de acordo com a raça do personagem
-
                 s += "HP: " + hp + "\n";
-                s += "Força: " + forca + "\n";
-                s += "Inteligencia: " + inteligencia + "\n";
-                s += "Destreza: " + destreza + "\n";
+                s += "Força: " + (forca + modForca) + "\n";
+                s += "Inteligencia: " + (inteligencia + modInteligencia) + "\n";
+                s += "Destreza: " + (destreza + modDestreza) + "\n";
+
+                if(pointsLeft > 0) {
+                    s += "Você ainda tem " + pointsLeft + " pontos sobrando.";
+                }
 
                 textCharSheet.setText(s);
             }

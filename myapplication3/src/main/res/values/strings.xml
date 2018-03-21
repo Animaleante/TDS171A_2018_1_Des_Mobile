@@ -11,6 +11,27 @@
         <item>Gnomo</item>
     </array>
 
+    <array name="forca_mod">
+        <item>0</item>
+        <item>-2</item>
+        <item>2</item>
+        <item>-1</item>
+    </array>
+
+    <array name="inteligencia_mod">
+        <item>0</item>
+        <item>0</item>
+        <item>-2</item>
+        <item>2</item>
+    </array>
+
+    <array name="destreza_mod">
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>-1</item>
+    </array>
+
     <array name="char_classes">
         <item>Guerreiro</item>
         <item>Ranger</item>
